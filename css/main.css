@@ -1,0 +1,46 @@
+//Clear
+div.clearfix {
+	clear: both;
+}
+//Product
+div.container {
+    display: block;
+    width: 100%;
+}
+div.product-container {
+	width: 30%;
+	display: inline-block;
+}
+div.product-image img {
+    width: 100%;
+}
+div.product-description {
+	text-align: center;
+}
+span.product-priceO {
+    display: inline-block;
+    float: left;
+    margin-left: 20%;
+}
+span.product-priceR {
+    display: inline-block;
+    float: right;
+}
+ /* Kompaktes Layout */ 
+ @media (min-width: 100px) and (max-width: 760px)
+ {
+	div.product-image {
+    	display: inline-block;
+    	width: 50%;
+    	float: left;
+	}
+	div.product-description {
+    	display: inline-block;
+    	width: 50%;
+    	float: left;
+	}
+	div.product-container {
+    	width: 100%;
+    	display: block;
+	}
+}
