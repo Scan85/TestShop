@@ -1,3 +1,10 @@
+.box-shadow-lr {
+    box-shadow: 0 10px 10px black;
+}
+.white-space {
+    white-space: normal;
+}
+/*
 //Clear
 div.clearfix {
 	clear: both;
@@ -27,7 +34,7 @@ span.product-priceR {
     float: right;
 }
  /* Kompaktes Layout */ 
- @media (min-width: 100px) and (max-width: 760px)
+ /*@media (min-width: 100px) and (max-width: 760px)
  {
 	div.product-image {
     	display: inline-block;
@@ -43,4 +50,4 @@ span.product-priceR {
     	width: 100%;
     	display: block;
 	}
-}
+}*/

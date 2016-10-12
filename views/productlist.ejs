@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<title><%= title %></title>
 </head>
 <body>
@@ -21,16 +22,16 @@
 	<h1>Produkte</h1>
 	<div class="container col-xs-12">
 		<% jsondata.forEach(function(item){ %>			
-		<div class="product-container col-xs-12 col-sm-4">
+		<div class="product-container col-xs-12 col-sm-4 btn btn-default box-shadow-lr">
 			<div class="product-image" class="col-xs-6 col-sm-12">
 				<img class="img-responsive img-thumbnail col-xs-6 col-sm-12" src='<%= item.images[0] %>'>
 			</div>
 			<div class="product-description col-xs-6 col-sm-12">
-				<span class="product-name col-xs-12 text-center"><%= item.description %></span>
+				<span class="product-name col-xs-12 text-center white-space"><%= item.description %></span>
 			</div>
 			<div class="product-price col-xs-6 col-sm-12">
-				<span class="product-priceO col-xs-6 text-center"><%= item.priceO %></span>
-				<span class="product-priceR col-xs-6 text-center"><%= item.priceR %></span>
+				<span class="product-priceO col-xs-6 text-center btn btn-default"><%= item.priceO %></span>
+				<span class="product-priceR col-xs-6 text-center btn btn-default"><%= item.priceR %></span>
 			</div>
 		</div>
 		<% }); %>
